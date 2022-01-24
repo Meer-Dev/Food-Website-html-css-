@@ -1,0 +1,240 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo and image */
+.logo img{
+    height: 3rem;
+    width: 3rem;
+    margin: 0.5rem 2rem 0.5rem 2rem;
+}
+
+/* Navbar */
+#navbar{
+ display: flex;
+ align-items: center;
+ position: relative;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar li{
+    list-style: none;
+}
+
+#navbar ul li a{
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 1.5rem;
+    text-shadow: 2px -1px 2px #000000;
+
+}
+#navbar ul li a:hover{
+    background-color: rgb(15, 15, 15, 0.2);
+    padding: 1.4rem 2rem 1.4rem 2rem;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: -1;
+    opacity: 80%;
+    height: 100%;
+    width: 100%;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 568px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(../images/home.jpg) no-repeat  center center/cover;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+    height: cover;
+    height: 642px;
+}
+.hprimary{
+    font-size: 2.8rem;
+    padding-top: 0rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px -1px 2px #000000;
+text-align: center;    
+font-family: 'Quattrocento Sans', sans-serif;
+}
+
+#home p{
+    font-size: 1.3rem;
+    /* padding-top: 5rem; */
+    color: rgb(255, 255, 255);
+    width: 80%;
+    text-shadow: 2px -1px 2px #000000;
+text-align: center;    
+font-family: 'Quattrocento Sans', sans-serif;
+margin-bottom: 1rem;
+}
+.btn {
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    border-radius: 18px;
+    height: 50px;
+    line-height: 50px;
+    color: #000000;
+    font-family: 'Quattrocento Sans', sans-serif;
+    width: 151px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 1px 1px 10px 0 #000000;
+    -moz-box-shadow: 1px 1px 10px 0 #000000;
+    box-shadow: 1px 1px 10px 0 #000000;
+    border: solid #337FED 0;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ .btn:hover {
+    border: solid #f1f1f1 1px;
+    background: #f1f1f1;
+    background-image: -webkit-linear-gradient(top, #f1f1f1, #f1f1f1);
+    background-image: -moz-linear-gradient(top, #f1f1f1, #f1f1f1);
+    background-image: -ms-linear-gradient(top, #f1f1f1, #f1f1f1);
+    background-image: -o-linear-gradient(top, #f1f1f1, #f1f1f1);
+    background-image: -webkit-gradient(to bottom, #f1f1f1, #f1f1f1);
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    border-radius: 19px;
+    text-decoration: none;
+ }
+ /* Services section */ 
+ .hprimary1{
+    font-size: 2.8rem;
+     color: black;
+     margin-top: 4rem;
+     margin-bottom: 3rem;
+     font-family: 'Quattrocento Sans', sans-serif;
+    text-align: center;
+ }
+ .hseceondry{
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-align: center;
+ }
+
+.pp{
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-align: center;
+ }
+
+ #services{
+    margin: 34px;
+    
+}
+#services .box{
+    align-items: center;
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    width: 20rem;
+    float: right;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+
+/* Section Partners */
+.ourpartners{
+    height: 420px;
+}
+.Partners img{
+    height: 180px;
+    width: 180px;
+
+}
+.Partners{
+    float: left;
+    align-items: center;
+    padding: 30px;
+  margin-right: 65px;
+    float: right;.
+    display: block;
+}
+.hprimar{
+    font-size: 2.8rem;
+     color: black;
+     font-family: 'Quattrocento Sans', sans-serif;
+    text-align: center;
+    margin-top: 10rem;
+}
+#contact{
+    position: relative;
+    margin-top: 10rem;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    
+    background: url('../images/contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Quattrocento Sans', sans-serif;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;.
+    display: block;
+    margin: auto;
+}
